@@ -3,7 +3,7 @@ function gcf(array){
         return 0
     }
     if(array.length==1){
-        return parseFloat(array.toString())
+        return array[0]
     }
     if(array.length>2){
         let a1=array.shift()
@@ -165,7 +165,6 @@ function primeFactorDisplay(num){
         }
     }
     prime.push(current,count)
-    console.log(prime)
     let string=num + " = "
     for (let i = 0; i < prime.length; i+=2) {
         if(prime[i+1]!=1){
