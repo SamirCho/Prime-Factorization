@@ -151,6 +151,15 @@ function checkNum(array,num){
 }
 
 function primeFactorDisplay(num){
+    if(num==1||num==0){
+        return num+" = "+num
+    }
+    if(num<0){
+        let array=primeFactorDisplay(-num).split(" ")
+        array[0]="-"+array[0]
+        array[2]="-"+array[2]
+        return array.join(" ")
+    }
     let array=primeFactor(num)
     let prime=[]
     let current=array[0]
