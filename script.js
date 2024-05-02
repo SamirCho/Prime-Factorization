@@ -50,7 +50,7 @@ function isPrime(num){
       }
       return true
     }
-  }
+}
 
 function factors(num){
     if(num==0){
@@ -191,3 +191,8 @@ function primeFactorDisplay(num){
 function display(){
     document.getElementById("container").innerHTML=primeFactorDisplay(document.getElementById("input").value)
 }
+
+console.log(primeFactorDisplay(2**32+1))
+console.log(primeFactorDisplay(2**37-1))
+console.log(primeFactorDisplay(2**43-1))
+console.log(primeFactorDisplay(2**73-1))
