@@ -192,7 +192,7 @@ function display(){
     document.getElementById("container").innerHTML=primeFactorDisplay(document.getElementById("input").value)
 }
 
-console.log(factors(2**32+1))
-console.log(factors(2**37-1))
-console.log(factors(2**43-1))
-console.log(factors(2**73-1))
+// console.log(factors(9999))
+// console.log(factors(999))
+// console.log(factors(2**43-1))
+// console.log(factors(2**73-1))
