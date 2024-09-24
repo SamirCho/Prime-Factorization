@@ -182,7 +182,7 @@ function primeFactorDisplay(num){
             string+=`${prime[i]}`
         }
         if(i+2<prime.length){
-            string+="⋅"
+            string+=" ⋅ "
         }
     }
     return string
